@@ -463,6 +463,166 @@
      object-fit: contain;
 }
 
+.section7 {
+  padding: 30px;
+}
+.section7 > h1 {
+  padding: 30px;
+  color: #00aeff;
+  text-align: center;
+  font-size: 2em;
+}
+.section7 > p {
+  color: #5c5a5a;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1em;
+}
+.section7 .lmsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section7 .lmsRow .lmsMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  gap: 30px;
+}
+.section7 .lmsRow .lmsMessage h1 {
+  color: #00aeff;
+  text-align: center;
+  font-size: 2em;
+  text-align: start;
+}
+.section7 .lmsRow .lmsMessage p {
+  color: #5c5a5a;
+  text-align: center;
+  font-size: 1.1em;
+  text-align: start;
+}
+.section7 .lmsRow img {
+  max-width: 700px;
+}
+
+.section8 > h1 {
+  padding: 30px;
+  color: #00aeff;
+  text-align: center;
+  font-size: 2em;
+}
+.section8 > p {
+  color: #5c5a5a;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1em;
+}
+.section8 .worksRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+.section8 .worksRow .imgCol {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  max-width: 400px;
+  text-align: justify;
+  flex: 1 1;
+  gap: 20px;
+}
+.section8 .worksRow .imgCol h2 {
+  font-size: 1.5em;
+  color: #5c5a5a;
+}
+.section8 .worksRow .imgCol p {
+  font-size: 1.1em;
+  color: #5c5a5a;
+}
+.section8 .worksRow .imgCol img {
+  opacity: 1;
+  width: 400px;
+}
+
+.section9 {
+  background-color: #02477a;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section9 .copyright {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 50px;
+  gap: 100px;
+}
+.section9 .copyright .colmn {
+  color: #f0f8ff;
+  max-width: 300px;
+  display: flex;
+}
+.section9 .copyright > :nth-child(1) {
+  max-width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.section9 .copyright > :nth-child(1) .email {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.section9 .copyright > :nth-child(1) .email input {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  padding-inline-start: 10px;
+}
+.section9 .copyright > :nth-child(1) .email button {
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: #2097f3;
+}
+.section9 .copyright > :nth-child(2) {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  flex-direction: column;
+}
+.section9 .copyright > :nth-child(2) p {
+  font-size: 0.8em;
+}
+.section9 .copyright > :nth-child(3),
+.section9 .copyright > :nth-child(4) {
+  max-width: 300px;
+}
+.section9 .copyright > :nth-child(3) ul,
+.section9 .copyright > :nth-child(4) ul {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section9 .copyright > :nth-child(3) ul li,
+.section9 .copyright > :nth-child(4) ul li {
+  list-style-type: none;
+  font-size: 0.6em;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -620,6 +780,14 @@ body {
     display: none;
   }
 }
+@media (max-width: 950px) {
+  .section7 .lmsRow {
+    flex-direction: column-reverse;
+  }
+  .section7 .lmsRow .lmsMessage {
+    margin: 40px;
+  }
+}
 @media (max-width: 1000px) {
   .row .col1 h1,
   .row .col1 p {
@@ -647,6 +815,7 @@ body {
     flex-wrap: wrap;
   }
   .section5 .review-container .reviews {
+    max-width: 900px;
     min-width: 200px !important;
     flex-direction: column;
     justify-content: space-between;
@@ -662,6 +831,12 @@ body {
   }
   .section5 .review-container .reviews:hover .quotes h2 {
     color: antiquewhite;
+  }
+  .section9 {
+    flex-direction: column;
+  }
+  .section9 .copyright .column {
+    width: auto;
   }
 }
 @media (max-width: 850px) {
@@ -681,10 +856,25 @@ body {
     display: block;
   }
 }
+@media screen and (max-width: 650px) {
+  .section6 .collegeContainer {
+    min-height: 400px;
+  }
+}
 @media (max-width: 600px) {
   .section5 .review-container .review-slide .reviews .imgCol {
     border-radius: 50%;
     border: 2px solid #0275aa;
+  }
+  .section7 .lmsRow {
+    flex-direction: column-reverse;
+  }
+  .section7 .lmsRow .lmsMessage {
+    margin: 40px;
+  }
+  .section7 .lmsRow img {
+    margin-top: 20px;
+    width: 400px;
   }
 }
 @media screen and (min-width: 820px) {

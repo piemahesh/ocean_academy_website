@@ -15,6 +15,16 @@
     }
   }
 }
+@media (max-width: 950px) {
+  .section7 {
+    .lmsRow {
+      flex-direction: column-reverse;
+      .lmsMessage {
+        margin: 40px;
+      }
+    }
+  }
+}
 @media (max-width: 1000px) {
   .row {
     .col1 {
@@ -45,6 +55,7 @@
         flex-wrap: wrap;
       }
       .reviews {
+        max-width: 900px;
         min-width: 200px !important;
         flex-direction: column;
         justify-content: space-between;
@@ -65,6 +76,18 @@
       }
     }
   }
+
+
+.section9{
+  flex-direction: column;
+  .copyright{
+    .column{
+      width: auto;
+    }
+  }
+}
+
+
 }
 @media (max-width: 850px) {
   .nav-bar {
@@ -83,6 +106,15 @@
     }
   }
 }
+// .............................................max 650px .....................
+@media screen and (max-width: 650px) {
+  .section6 {
+    .collegeContainer {
+      min-height: 400px;
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .section5 {
     .review-container {
@@ -93,6 +125,18 @@
             border: 2px solid #0275aa;
           }
         }
+      }
+    }
+  }
+  .section7 {
+    .lmsRow {
+      flex-direction: column-reverse;
+      .lmsMessage {
+        margin: 40px;
+      }
+      img{
+        margin-top: 20px;
+        width: 400px;
       }
     }
   }
