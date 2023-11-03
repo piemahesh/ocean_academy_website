@@ -386,7 +386,6 @@
   border-radius: 10px;
   overflow: hidden;
   overflow-x: scroll;
-  box-shadow: 0.5px 0.5px 5px #2097f3;
 }
 .section5 .review-container .review-slide::-webkit-scrollbar-thumb {
   background-color: #0275aa;
