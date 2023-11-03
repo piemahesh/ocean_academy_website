@@ -1,0 +1,147 @@
+@import "colors";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+
+// css reset.............
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Domine", serif;
+  font-family: "EB Garamond", serif;
+}
+// ....................
+
+.nav-bar {
+  min-height: 80px;
+  width: 100%;
+  max-height: 300px;
+  position: sticky;
+  background: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  z-index: 99;
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      list-style-type: none;
+      font-size: 1.2rem;
+      color: #4a4646b2;
+      font-weight: 600;
+      margin: 15px;
+      a {
+        transition: all 0.4s;
+        &:hover {
+          color: #06b0fffd;
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+        }
+      }
+      &:hover {
+        scale: 1.1;
+      }
+    }
+    .nav-button {
+      height: 40px;
+      font-family: "Segoe UI";
+      font-size: 1.2rem;
+      font-weight: 450;
+      justify-content: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 130px;
+      color: white;
+      background: #2097f3;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.5s;
+      &::after {
+        content: "-in";
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: #2097f3;
+        left: 50%;
+        transition: all 0.6s;
+        z-index: 2;
+      }
+      &::before {
+        content: "Log";
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        background-color: #2097f3;
+        right: 50%;
+        transition: all 0.6s;
+        z-index: 2;
+      }
+      &:hover {
+        background-color: white;
+        color: #2097f3;
+        transition: all 1s;
+        border: 2px solid $main-color;
+        scale: 1.1;
+        cursor: pointer;
+        &::after {
+          left: 100%;
+          transition: all 0.5s;
+        }
+        &::before {
+          right: 100%;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+  .menu-btn {
+    display: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: $main-color;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .trackingLine {
+    height: 3px;
+    width: 20px;
+    background-color: #06b0ffca;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0374c5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f12d;
+  border-radius: 10px;
+}
+body{
+  overflow-x: hidden
+}
+
+@import "_webRes.scss";

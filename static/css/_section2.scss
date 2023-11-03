@@ -1,0 +1,58 @@
+.section2 {
+  background-color: $containerBg;
+
+  > h1 {
+    padding: 30px;
+    color: $txtCol;
+    text-align: center;
+    font-size: 2em;
+  }
+  > p {
+    color: $para-col;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1em;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 35px auto;
+    max-width: 1200px;
+    text-align: center;
+    > div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      justify-content: center;
+      max-width: 350px;
+      padding: 15px;
+      gap: 15px;
+      >img {
+        min-height: 50px;
+        max-height: 100px;
+      }
+      > p {
+        color: $para-col;
+        // font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        max-width: 800px;
+        text-align: center;
+      }
+      > h2 {
+        color: $txtCol;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section2 {
+    > p h1 {
+      padding: 30px;
+    }
+  }
+}

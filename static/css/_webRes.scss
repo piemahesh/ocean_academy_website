@@ -1,0 +1,106 @@
+@media (max-width: 1180px) {
+  .nav-bar {
+    height: 120px;
+    width: 100%;
+    flex-direction: column;
+    .nav-container {
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .menu-btn {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .row {
+    .col1 {
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+    .col2 {
+      display: none !important;
+    }
+  }
+  .section5 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    > p {
+      margin: auto;
+      // display:inline-block;
+    }
+    > h1 {
+      text-align: center;
+      margin: 10px auto;
+    }
+    .review-container {
+      flex-direction: column;
+      .review-slide {
+        max-width: 600px;
+        flex-direction: column;
+        box-shadow: none;
+      }
+      .reviews {
+        min-width: 300px !important;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        margin: 20px;
+        box-shadow: 1px 1px 5px rgba(0, 191, 255, 0.5);
+        border-radius: 10px 0px 10px 0px;
+        &:hover {
+          background-color: #0275aac9;
+          .quotes {
+            p {
+              color: white;
+            }
+            h2{
+              color: antiquewhite;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .nav-bar {
+    height: 120px;
+    width: 100%;
+    flex-direction: row;
+    .nav-container {
+      height: 50px;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .menu-btn {
+      display: block;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .section5 {
+    .review-container {
+      .review-slide {
+        .reviews {
+          .imgCol {
+            border-radius: 50%;
+            border: 2px solid #0275aa;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 820px) {
+  .slide-bar {
+    display: none;
+  }
+}

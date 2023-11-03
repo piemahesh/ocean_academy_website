@@ -1,0 +1,27 @@
+.section4 {
+  > h1 {
+    padding: 30px;
+    color: $txtCol;
+    text-align: center;
+    font-size: 2em;
+  }
+  > p {
+    color: $para-col;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1em;
+  }
+  .placementCompanies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    img {
+      object-fit: contain;
+      margin: 20px;
+      width: 120px;
+    }
+  }
+}

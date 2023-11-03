@@ -1,0 +1,128 @@
+.section5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  padding: 30px;
+  justify-content: space-between;
+  gap: 30px;
+  > h1 {
+    // padding: 30px;
+    color: $txtCol;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  > p {
+    color: $para-col;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2em;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction: column;
+    &::after {
+      content: "__";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 12px;
+    }
+    &::before {
+      content: "__";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 12px;
+    }
+  }
+  //   ................... Current Image notifier...........
+  .currentImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .circle {
+      height: 30px;
+      margin-right: 20px;
+      width: 30px;
+      border-radius: 50%;
+      //   background-color: rgb(90, 201, 20);
+      border: 2px solid $main-color;
+    }
+  }
+
+  //   ..............review container..................
+  .review-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .review-slide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1000px;
+      padding: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      overflow-x: scroll;
+      box-shadow: 0.5px 0.5px 5px $main-color;
+      &::-webkit-scrollbar-thumb {
+        background-color: #0275aa;
+      }
+      &::-webkit-scrollbar {
+        max-height: 10px;
+        min-height: 5px;
+      }
+      .reviews {
+        min-width: 950px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        right: 0%;
+
+        .imgCol {
+          height: 200px;
+          min-width: 200px;
+          overflow: hidden;
+          border-radius: 20px 0px 20px 0px;
+          > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .quotes {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          max-width: 500px;
+          flex-direction: column;
+          gap: 30px;
+          > p {
+            color: $para-col;
+            font-size: 1.1em;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+              "Lucida Sans", Arial, sans-serif;
+            line-height: 1.5;
+          }
+          h2 {
+            color: $main-color;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
