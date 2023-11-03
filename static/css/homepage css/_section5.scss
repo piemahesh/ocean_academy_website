@@ -71,12 +71,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-direction: row;
       max-width: 1000px;
+      min-width: 300px;
       padding: 30px;
       border-radius: 10px;
       overflow: hidden;
       overflow-x: scroll;
-      // box-shadow: 0.5px 0.5px 5px $main-color;
       &::-webkit-scrollbar-thumb {
         background-color: #0275aa;
       }

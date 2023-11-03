@@ -42,16 +42,14 @@
       flex-direction: column;
       .review-slide {
         max-width: 600px;
-        flex-direction: column;
-        box-shadow: none;
+        flex-wrap: wrap;
       }
       .reviews {
-        min-width: 300px !important;
+        min-width: 200px !important;
         flex-direction: column;
         justify-content: space-between;
         padding: 30px;
         margin: 20px;
-        box-shadow: 1px 1px 5px rgba(0, 191, 255, 0.5);
         border-radius: 10px 0px 10px 0px;
         &:hover {
           background-color: #0275aac9;
@@ -59,7 +57,7 @@
             p {
               color: white;
             }
-            h2{
+            h2 {
               color: antiquewhite;
             }
           }
