@@ -15,8 +15,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Domine", serif;
-  font-family: "EB Garamond", serif;
+  font-family: Poppins, sans-serif, Ubuntu;
 }
 // ....................
 
@@ -40,7 +39,7 @@
       list-style-type: none;
       font-size: 1.2rem;
       color: #4a4646b2;
-      font-weight: 600;
+      font-weight: 500;
       margin: 15px;
       a {
         transition: all 0.4s;
@@ -144,8 +143,8 @@
   background: #f1f1f12d;
   border-radius: 10px;
 }
-body{
-  overflow-x: hidden
+body {
+  overflow-x: hidden;
 }
 
 @import "_webRes.scss";

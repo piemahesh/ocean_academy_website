@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=EB+Garamond&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         </div>
     </nav>
     <!-- ..............................................main -content.................... ..... -->
-    <section class="section1">
+    <section class="section1" data-aos="fade-up">
         <div class="bgImg">
             <div class="bgCol">
                 <div class="row">
@@ -63,7 +64,7 @@
         </div>
     </section>
 
-    <section class="section2">
+    <section class="section2" data-aos="fade-up">
         <h1>Our
             Journey Through The Years</h1>
         <p>
@@ -91,7 +92,7 @@
         </div>
     </section>
     <!-- .....................Trending section ........................... -->
-    <section class="section3">
+    <section class="section3" data-aos="fade-right">
         <h1>Trending Courses</h1>
         <p>Ocean academy is here to offer you a wonderful fresher technical course package containing the relevant
             courses in all areas of interview procedure which would help the students to shine and succeed.</p>
@@ -181,7 +182,7 @@
         </div>
     </section>
     <!-- .................................. Plcement section.................. -->
-    <section class="section4">
+    <section class="section4" data-aos="zoom-in">
         <h1>Our Students Working At</h1>
         <p>We not only enlighten students with our knowledge but also help develop their careers. Our students have
             grabbed placement in various firms and MNCs.</p>
@@ -198,7 +199,7 @@
         </div>
     </section>
     <!-- ....................................student saying section................ -->
-    <section class="section5">
+    <section class="section5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <p>What our</p>
         <h1>Students are Saying</h1>
         <div class="review-container">
@@ -283,11 +284,11 @@
         </div>
     </section>
     <!-- ......................our clients................................... -->
-    <section class="section6">
+    <section class="section6" data-aos="fade-up-right">
         <h1>Our Clients</h1>
         <p>Various Educational Institutes and Universities prefer our pioneering training methods for their students.
         </p>
-        <div class="collegeContainer">
+        <div class="collegeContainer " data-aos="zoom-out-left">
             <img src="./static/src/colleges/Aadhiparasakthi.png" alt="img1">
             <img src="./static/src/colleges/ck.png" alt="img2">
             <img src="./static/src/colleges/mit.jpg" alt="img3">
@@ -296,11 +297,11 @@
             <img src="./static/src/colleges/smvc.png" alt="img6">
         </div>
     </section>
-    <section class="section7">
+    <section class="section7" data-aos="fade-up-right">
         <h1>What's New at Ocean Academy</h1>
         <p>We are proud to release our most innovative learning platform to learn cutting-edge technologies. Here's
             what's coming up next for Ocean Academy Live Members.</p>
-        <div class="lmsRow">
+        <div class="lmsRow" data-aos="fade-up-right">
             <div class="lmsMessage">
                 <h1>Ocean Academy Launches its own LMS for our OA-Live Learners.</h1>
                 <p>Ocean Academy Launches its own LMS for our OA-Live Learners. OA has launched its own CMS for our
@@ -311,7 +312,7 @@
         </div>
 
     </section>
-    <section class="section8">
+    <section class="section8" data-aos="zoom-in">
         <h1>How It Works</h1>
         <p>We provide training in both online and offline modes</p>
         <div class="worksRow">
@@ -383,6 +384,10 @@
 
         </footer>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="./static/js/script.js"></script>
 </body>
