@@ -758,10 +758,6 @@
   border-radius: 10px;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 @media (max-width: 1180px) {
   .nav-bar {
     height: 120px;
