@@ -18,7 +18,10 @@
   font-family: Poppins, sans-serif, Ubuntu;
 }
 // ....................
-
+html,body{
+  overflow-x:hidden;
+  max-width:100%;
+}
 .nav-bar {
   min-height: 80px;
   width: 100%;
