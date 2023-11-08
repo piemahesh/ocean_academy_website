@@ -1,4 +1,4 @@
-.slide-bar {
+.slide-bar{
   height: 100vh;
   width: 300px;
   border: 2.5px solid #2097f3;
@@ -13,6 +13,10 @@
   transition: all 1s;
   z-index: 99;
   background-color: seashell;
+}
+html,body{
+  overflow-x:hidden;
+  max-width:100%;
 }
 .slide-bar .side-bar {
   height: 100%;
